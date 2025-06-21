@@ -1,3 +1,5 @@
+import { gradeStorage } from "./storage.js";
+
 // Her dersin kredi ağırlığı
 const weightMap = {
   professionalism: 2, // 2 kredi

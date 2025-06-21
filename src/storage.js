@@ -69,3 +69,6 @@ class GradeStorage {
 
 // Global storage instance
 const gradeStorage = new GradeStorage();
+
+// Export for use in other modules
+export { gradeStorage, GradeStorage };
