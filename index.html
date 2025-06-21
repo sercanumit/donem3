@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/output.css" />
+    <link rel="stylesheet" href="./src/output.css" />
     <title>Dönem 3 Not Hesaplama</title>
   </head>
   <body
@@ -36,6 +36,7 @@
           class="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl border border-white/20 p-8 md:p-12"
         >
           <!-- Course Grid -->
+          <!-- Blok Dersleri -->
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Tıpta Profesyonellik -->
             <div
@@ -46,10 +47,10 @@
               </h3>
               <div>
                 <input
+                  id="professionalism"
                   type="number"
                   min="0"
                   max="100"
-                  step="0.5"
                   class="w-full px-3 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all"
                   placeholder="Tıpta Profesyonellik Notu"
                 />
@@ -63,10 +64,10 @@
               <h3 class="text-lg font-semibold text-white mb-4">Gebelik</h3>
               <div>
                 <input
+                  id="pregnancy"
                   type="number"
                   min="0"
                   max="100"
-                  step="0.5"
                   class="w-full px-3 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all"
                   placeholder="Gebelik Notu"
                 />
@@ -80,46 +81,31 @@
               <h3 class="text-lg font-semibold text-white mb-4">Tümörler</h3>
               <div>
                 <input
+                  id="tumors"
                   type="number"
                   min="0"
                   max="100"
-                  step="0.5"
                   class="w-full px-3 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all"
                   placeholder="Tümörler Notu"
                 />
               </div>
             </div>
 
-            <!-- Solunum -->
+            <!-- Solunum ve Dolaşım -->
             <div
               class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300"
             >
-              <h3 class="text-lg font-semibold text-white mb-4">Solunum</h3>
+              <h3 class="text-lg font-semibold text-white mb-4">
+                Solunum Dolaşım
+              </h3>
               <div>
                 <input
+                  id="respiratoryCirculatory"
                   type="number"
                   min="0"
                   max="100"
-                  step="0.5"
                   class="w-full px-3 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all"
-                  placeholder="Solunum Notu"
-                />
-              </div>
-            </div>
-
-            <!-- Dolaşım -->
-            <div
-              class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300"
-            >
-              <h3 class="text-lg font-semibold text-white mb-4">Dolaşım</h3>
-              <div>
-                <input
-                  type="number"
-                  min="0"
-                  max="100"
-                  step="0.5"
-                  class="w-full px-3 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all"
-                  placeholder="Dolaşım Notu"
+                  placeholder="Solunum Dolaşım Notu"
                 />
               </div>
             </div>
@@ -131,10 +117,10 @@
               <h3 class="text-lg font-semibold text-white mb-4">Travma</h3>
               <div>
                 <input
+                  id="trauma"
                   type="number"
                   min="0"
                   max="100"
-                  step="0.5"
                   class="w-full px-3 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all"
                   placeholder="Travma Notu"
                 />
@@ -148,10 +134,10 @@
               <h3 class="text-lg font-semibold text-white mb-4">Enfeksiyon</h3>
               <div>
                 <input
+                  id="infection"
                   type="number"
                   min="0"
                   max="100"
-                  step="0.5"
                   class="w-full px-3 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all"
                   placeholder="Enfeksiyon Notu"
                 />
@@ -165,10 +151,10 @@
               <h3 class="text-lg font-semibold text-white mb-4">Endokrin</h3>
               <div>
                 <input
+                  id="endocrine"
                   type="number"
                   min="0"
                   max="100"
-                  step="0.5"
                   class="w-full px-3 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all"
                   placeholder="Endokrin Notu"
                 />
@@ -182,10 +168,10 @@
               <h3 class="text-lg font-semibold text-white mb-4">Sindirim</h3>
               <div>
                 <input
+                  id="digestive"
                   type="number"
                   min="0"
                   max="100"
-                  step="0.5"
                   class="w-full px-3 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all"
                   placeholder="Sindirim Notu"
                 />
@@ -199,10 +185,10 @@
               <h3 class="text-lg font-semibold text-white mb-4">Yaşlanma</h3>
               <div>
                 <input
+                  id="aging"
                   type="number"
                   min="0"
                   max="100"
-                  step="0.5"
                   class="w-full px-3 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all"
                   placeholder="Yaşlanma Notu"
                 />
@@ -218,10 +204,10 @@
               </h3>
               <div>
                 <input
+                  id="neuropsychiatry"
                   type="number"
                   min="0"
                   max="100"
-                  step="0.5"
                   class="w-full px-3 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all"
                   placeholder="Nöropsikiyatri Notu"
                 />
@@ -235,47 +221,88 @@
               <h3 class="text-lg font-semibold text-white mb-4">Seçmeli</h3>
               <div>
                 <input
+                  id="elective"
                   type="number"
                   min="0"
                   max="100"
-                  step="0.5"
                   class="w-full px-3 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all"
                   placeholder="Seçmeli Notu"
                 />
               </div>
             </div>
-
-            <!-- PDÖ Toplam -->
+          </div>
+          <!-- Blok Başarı Notları Önizleme -->
+          <div class="mt-8 pt-6 border-t border-white/10">
             <div
-              class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300"
+              class="bg-gradient-to-r from-emerald-500/10 to-teal-500/10 rounded-xl p-6 border border-emerald-400/20 mb-6"
             >
-              <h3 class="text-lg font-semibold text-white mb-4">PDÖ Toplam</h3>
-              <div>
-                <input
-                  type="number"
-                  min="0"
-                  max="100"
-                  step="0.5"
-                  class="w-full px-3 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all"
-                  placeholder="PDÖ Notu"
-                />
+              <h3
+                class="text-lg font-semibold text-white mb-4 text-center flex items-center justify-center gap-2"
+              >
+                Blok Başarı Notu
+              </h3>
+              <div id="blockGradesPreview" class="text-center">
+                <div
+                  id="blockGrade"
+                  class="text-2xl font-bold text-emerald-200 mb-2"
+                >
+                  Notlar girilmemiş
+                </div>
+                <div class="text-sm text-emerald-300 opacity-75">
+                  Ağırlıklı blok ortalaması
+                </div>
+              </div>
+              <div class="mt-4 text-center">
+                <div class="text-xs text-emerald-200 opacity-75">
+                  * Bu not girilen değerlere göre otomatik hesaplanır
+                </div>
               </div>
             </div>
+          </div>
 
-            <!-- MDU -->
+          <!-- PDÖ ve MDU Bölümü -->
+          <div class="mt-6">
             <div
-              class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300"
+              class="flex flex-col sm:flex-row gap-6 justify-center max-w-2xl mx-auto"
             >
-              <h3 class="text-lg font-semibold text-white mb-4">MDU</h3>
-              <div>
-                <input
-                  type="number"
-                  min="0"
-                  max="100"
-                  step="0.5"
-                  class="w-full px-3 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all"
-                  placeholder="MDU Notu"
-                />
+              <!-- PDÖ Toplam -->
+              <div
+                class="bg-gradient-to-r from-blue-50/10 to-gray-50/10 backdrop-blur-sm rounded-lg p-4 border border-blue-200/20 hover:border-blue-300/30 transition-all duration-300 flex-1"
+              >
+                <div class="flex items-center justify-center space-x-3 mb-3">
+                  <div class="w-2 h-2 bg-blue-300 rounded-full"></div>
+                  <h3 class="text-sm font-medium text-blue-100">PDÖ Toplam</h3>
+                </div>
+                <div>
+                  <input
+                    id="pdo"
+                    type="number"
+                    min="0"
+                    max="100"
+                    class="w-full px-3 py-2 bg-white/5 border border-blue-200/20 rounded-md text-white placeholder-blue-200 focus:outline-none focus:ring-1 focus:ring-blue-300 focus:border-blue-300 transition-all text-sm text-center"
+                    placeholder="PDÖ Notu"
+                  />
+                </div>
+              </div>
+
+              <!-- MDU -->
+              <div
+                class="bg-gradient-to-r from-blue-50/10 to-gray-50/10 backdrop-blur-sm rounded-lg p-4 border border-blue-200/20 hover:border-blue-300/30 transition-all duration-300 flex-1"
+              >
+                <div class="flex items-center justify-center space-x-3 mb-3">
+                  <div class="w-2 h-2 bg-blue-300 rounded-full"></div>
+                  <h3 class="text-sm font-medium text-blue-100">MDU</h3>
+                </div>
+                <div>
+                  <input
+                    id="mdu"
+                    type="number"
+                    min="0"
+                    max="100"
+                    class="w-full px-3 py-2 bg-white/5 border border-blue-200/20 rounded-md text-white placeholder-blue-200 focus:outline-none focus:ring-1 focus:ring-blue-300 focus:border-blue-300 transition-all text-sm text-center"
+                    placeholder="MDU Notu"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -294,13 +321,36 @@
                   >Final Notu</label
                 >
                 <input
+                  id="finalExam"
                   type="number"
                   min="0"
                   max="100"
-                  step="0.5"
                   class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent transition-all text-center text-xl"
                   placeholder="Final Notu"
                 />
+                <div
+                  id="requiredFinalScore"
+                  class="bg-purple-500/20 rounded-lg p-3 border border-purple-400/30 mt-4 text-center"
+                >
+                  <div
+                    id="requiredScoreTitle"
+                    class="text-purple-200 font-medium"
+                  >
+                    Geçmek için gereken final puanı:
+                  </div>
+                  <div
+                    id="requiredScoreValue"
+                    class="text-2xl font-bold text-purple-100 mt-1"
+                  >
+                    ---
+                  </div>
+                  <div
+                    id="finalBarrierText"
+                    class="text-sm text-purple-300 mt-1"
+                  >
+                    Final barajı: 59.5
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -315,23 +365,29 @@
               </h3>
               <div class="text-center">
                 <div
+                  id="generalAverage"
                   class="text-5xl font-bold text-transparent bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text mb-2"
                 >
                   --
                 </div>
                 <div class="text-lg text-blue-200">Toplam Not Ortalaması</div>
+
+                <!-- Status Information -->
+                <div
+                  id="statusInfo"
+                  class="mt-4 p-4 rounded-lg border transition-all duration-300 hidden"
+                >
+                  <div id="statusText" class="text-lg font-semibold mb-2"></div>
+                  <div id="gradeInfo" class="text-sm opacity-75"></div>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Action Buttons -->
-          <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+          <!-- Action Button -->
+          <div class="mt-8 flex justify-center">
             <button
-              class="px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold rounded-lg hover:from-blue-600 hover:to-blue-700 transform hover:scale-105 transition-all duration-200 shadow-lg"
-            >
-              Hesapla
-            </button>
-            <button
+              id="clearBtn"
               class="px-8 py-3 bg-white/10 text-white font-semibold rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-200"
             >
               Temizle
@@ -341,8 +397,31 @@
       </div>
     </div>
 
+    <!-- Credit Section -->
+    <div class="relative z-10 py-6">
+      <div class="text-center">
+        <div
+          class="w-full h-px bg-gradient-to-r from-transparent via-white/20 to-transparent mb-4"
+        ></div>
+        <p class="text-white/60 text-sm">
+          <a
+            href="https://github.com/sercanumit"
+            target="_blank"
+            class="text-white/80 font-medium hover:text-white transition-colors duration-200 underline decoration-white/40 hover:decoration-white"
+            >GitHub</a
+          >
+        </p>
+      </div>
+    </div>
+
     <!-- Scripts -->
-    <script src="node_modules/particles.js/particles.js" defer></script>
-    <script src="/src/particle-config.js" defer></script>
+    <script
+      type="module"
+      src="node_modules/particles.js/particles.js"
+      defer
+    ></script>
+    <script type="module" src="/src/particle-config.js" defer></script>
+    <script type="module" src="/src/storage.js" defer></script>
+    <script type="module" src="/src/calc.js" defer></script>
   </body>
 </html>
