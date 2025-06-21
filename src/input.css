@@ -1,26 +1,26 @@
 @import "tailwindcss";
 
 @layer base {
-  /*
-    iOS (Safari) ve diğer tarayıcıların form elemanlarına (input, button vb.)
-    kendi varsayılan stillerini uygulamasını engellemek için bu kuralları ekliyoruz.
-    Bu, Tailwind sınıflarınızın tüm platformlarda tutarlı çalışmasını sağlar.
-  */
   input[type="number"],
   button {
     -webkit-appearance: none;
     appearance: none;
   }
 
-  /* Firefox'ta sayı inputlarındaki okları gizlemeye devam etmek için */
   input[type="number"] {
     -moz-appearance: textfield;
   }
 }
 
-/* Webkit tabanlı tarayıcılarda (Chrome, Safari) sayı inputlarındaki okları gizlemek için */
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+@supports not (backdrop-filter: blur(1px)) {
+  .backdrop-blur-lg,
+  .backdrop-blur-sm {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
 }
